@@ -129,7 +129,6 @@ columns=fullflexible
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-
 Download all latex-tikz codes from 
 %
 \begin{lstlisting}
@@ -151,17 +150,33 @@ ANSWER:\\
 \end{figure}
 
  From the figure 
- 
  \begin{align}
       \mathit{S} - B &= \bar{B}\\
-      A - (AB) &= A\bar{B}
- \end{align}
- So from these equations we get,
- \begin{enumerate}
-     \item 1 - \pr{B} = \pr{\bar{B}}
-     \item \pr{A} - \pr{AB} = \pr{A\bar{B}}
- \end{enumerate}
- using these
+    \implies  1 - \pr{B} &= \pr{\bar{B}}\\
+    A-AB &= A(1-B) \\
+     A-AB &=A\bar{B}\\
+    \implies \pr{A}-\pr{AB} &=\pr{A\bar{B}}
+\end{align}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1.5cm}|p{1cm}|}
+ \hline
+  \multicolumn{6}{|c|}{Truth table}\\[0.5ex]                     
+ \hline
+ \hline
+  A &  B & AB & ${\bar{B}}$ & A-AB & A${\bar{B}}$ \\[0.5ex] 
+ \hline
+ 1 & 1 & 1 & 0 & 0 & 0\\
+ 1 & 0 & 0 & 1 & 1 & 1\\
+ 0 & 1 & 0 & 0 & 0 & 0\\
+ 0 & 0 & 0 & 1 & 0 & 0\\
+ \hline
+\end{tabular}
+\end{table}\\
+
+ Using the above equations (0.0.2) and (0.0.5)
  \begin{align}
      \dfrac{\pr{A}-\pr{A B}}{1-\pr{B}} &= \dfrac{\pr{A\bar{B}}}{\pr{\bar{B}}} \\
      &=\pr{\dfrac{A}{\bar{B}}}

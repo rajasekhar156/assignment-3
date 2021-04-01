@@ -145,19 +145,18 @@ $\dfrac{\pr{A}-\pr{A B}}{1-\pr{B}}$ equals \\
     \item \pr{\dfrac{\bar{A}}{\bar{B}}}\\
 \end{enumerate}   
 ANSWER:\\
-\begin{figure}[h]
-\includegraphics[width=\linewidth]{image-1}
-\end{figure}
-
- From the figure 
+From Laws of complimentary of Boolean algebra
  \begin{align}
-      \mathit{S} - B &= \bar{B}\\
-    \implies  1 - \pr{B} &= \pr{\bar{B}}\\
-    A-AB &= A(1-B) \\
-     A-AB &=A\bar{B}\\
-    \implies \pr{A}-\pr{AB} &=\pr{A\bar{B}}
+     B + \bar{B} &= 1\\
+     \pr{B} + \pr{\bar{B}} &=1\\
+     1 -\pr{B} &=\pr{\bar{B}}
 \end{align}
-
+And also as
+\begin{align}
+    A -AB &= A(1-B)\\
+   A-AB &=A(\bar{B}) \\
+    \pr{A} - \pr{AB} &=\pr{A\bar{B}}
+\end{align}
 \renewcommand{\arraystretch}{1.3}
 \begin{table}[h!]
     \centering
@@ -175,11 +174,10 @@ ANSWER:\\
  \hline
 \end{tabular}
 \end{table}\\
-
- Using the above equations (0.0.2) and (0.0.5)
+ Using the above equations (0.0.3) and (0.0.6)
  \begin{align}
      \dfrac{\pr{A}-\pr{A B}}{1-\pr{B}} &= \dfrac{\pr{A\bar{B}}}{\pr{\bar{B}}} \\
-     &=\pr{\dfrac{A}{\bar{B}}}
+     &=\pr{A/\bar{B}}
  \end{align}
  Hence, option (1) is correct. 
 \end{document}
